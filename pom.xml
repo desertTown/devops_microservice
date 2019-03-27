@@ -6,7 +6,11 @@
 
     <groupId>com.jluzh</groupId>
     <artifactId>devops_microservice</artifactId>
+    <packaging>pom</packaging>
     <version>0.0.1</version>
+    <modules>
+        <module>message-thrift-service-api</module>
+    </modules>
 
 
 </project>
