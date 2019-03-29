@@ -1,7 +1,7 @@
-package com.jluzh.mapper;
+package com.jluzh.user.mapper;
 
 
-import com.jluzh.thrift.user.UserInfo;
+import com.jluzh.user.thrift.user.UserInfo;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
