@@ -3,6 +3,7 @@ package com.jluzh.user.service;
 import com.jluzh.thrift.user.UserInfo;
 import com.jluzh.thrift.user.UserService;
 import org.apache.thrift.TException;
+import org.springframework.stereotype.Service;
 
 @Service
 public class UserServiceImpl implements UserService.Iface{
