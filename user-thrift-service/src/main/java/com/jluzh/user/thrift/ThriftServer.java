@@ -1,6 +1,6 @@
 package com.jluzh.user.thrift;
 
-import com.jluzh.user.thrift.user.UserService;
+import com.jluzh.thrift.user.UserService;
 import org.apache.thrift.TProcessor;
 import org.apache.thrift.protocol.TBinaryProtocol;
 import org.apache.thrift.server.TNonblockingServer;

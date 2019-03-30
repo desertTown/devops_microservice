@@ -1,8 +1,8 @@
 package com.jluzh.user.service;
 
 import com.jluzh.user.mapper.UserMapper;
-import com.jluzh.user.thrift.user.UserInfo;
-import com.jluzh.user.thrift.user.UserService;
+import com.jluzh.thrift.user.UserInfo;
+import com.jluzh.thrift.user.UserService;
 import org.apache.thrift.TException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
