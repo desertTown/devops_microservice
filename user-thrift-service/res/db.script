@@ -1,3 +1,5 @@
+CREATE DATABASE `db_user` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */
+
 CREATE TABLE `pe_user` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `username` varchar(32) COLLATE utf8mb4_general_ci NOT NULL,
@@ -6,4 +8,12 @@ CREATE TABLE `pe_user` (
   `mobile` varchar(32) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `email` varchar(32) COLLATE utf8mb4_general_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
+
+
+CREATE TABLE `pe_teacher` (
+  `user_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `intro` varchar(64) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `description` varchar(512) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  PRIMARY KEY (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
