@@ -9,17 +9,18 @@ import smtplib
 from email.mime.text import MIMEText
 from email.header import Header
 
-
 sender = '13631260372@163.com'
 authCode = 'gongzaiA1'
+
+
 class MessageServiceHandler:
 
     def sendMobileMessage(self, mobile, message):
-        print ("sendMobileMessage, mobile:"+mobile+", message:"+message)
+        print("sendMobileMessage, mobile:" + mobile + ", message:" + message)
         return True
 
     def sendEmailMessage(self, email, message):
-        print ("sendEmailMessage, email:"+email+", message:"+message)
+        print("sendEmailMessage, email:" + email + ", message:" + message)
         messageObj = MIMEText(message, "plain", "utf-8")
         messageObj['From'] = sender
         messageObj['To'] = email
@@ -28,17 +29,17 @@ class MessageServiceHandler:
             smtpObj = smtplib.SMTP('smtp.163.com')
             smtpObj.login(sender, authCode)
             smtpObj.sendmail(sender, [email], messageObj.as_string())
-            print ("send mail success")
+            print("send mail success")
             return True
         except smtplib.SMTPException:
-            print ("send mail failed!")
+            print("send mail failed!")
             return False
 
 
 if __name__ == '__main__':
     handler = MessageServiceHandler()
     processor = MessageService.Processor(handler)
-    transport = TSocket.TServerSocket("localhost", "9090")
+    transport = TSocket.TServerSocket("192.168.50.12", "9090")
     tfactory = TTransport.TFramedTransportFactory()
     pfactory = TBinaryProtocol.TBinaryProtocolFactory()
 
