@@ -12,3 +12,7 @@ CREATE TABLE `pr_user_course` (
   `course_id` int(11) NOT NULL,
   PRIMARY KEY (`user_id`,`course_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
+
+insert into pe_course(id, title, description) values (1, '直接任意球教程', '百发百中');
+
+insert into pr_user_course(user_id, course_id) values (2, 1);
