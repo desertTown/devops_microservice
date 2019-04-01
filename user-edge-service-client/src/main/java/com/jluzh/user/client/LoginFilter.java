@@ -59,7 +59,8 @@ public abstract class LoginFilter implements Filter {
         }
 
         if(userDTO==null) {
-            response.sendRedirect("http://127.0.0.1:8082/user/login");
+            // 跳转到zuul 接口
+            response.sendRedirect("http://www.evans.com/user/login");
             return;
         }
 
