@@ -1,0 +1,4 @@
+FROM python:3.6
+MAINTAINER deserttown 136312603722163.com
+
+RUN pip install thrift
