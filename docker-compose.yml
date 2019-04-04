@@ -23,7 +23,7 @@ services:
     - user-service
     command:
     - "--mysql.address=192.168.50.92"
-    - "--zookeeper.address=1192.168.50.92"
+    - "--zookeeper.address=192.168.50.92"
 
   course-edge-service:
     image: course-edge-service:latest
