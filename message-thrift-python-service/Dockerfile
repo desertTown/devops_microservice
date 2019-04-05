@@ -1,4 +1,4 @@
-FROM python-base:latest
+FROM 192.168.50.2/micro-service/python-base
 MAINTAINER deserttown 136312603722163.com
 
 ENV PYTHONPATH /
