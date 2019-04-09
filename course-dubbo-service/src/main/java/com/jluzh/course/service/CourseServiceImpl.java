@@ -12,7 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.List;
 
 
-@Service
+@Service(timeout = 100000)
 public class CourseServiceImpl implements ICourseService {
 
 
